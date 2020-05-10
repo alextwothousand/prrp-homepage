@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block title %}Project Reality Roleplay{% endblock %}
+
+{% block content %}
+	<section class="section hero is-fullheight-with-navbar">
+		<div class="hero-body">
+			<div class="container has-text-centered">
+				<h1 class="title">
+					<img src="/img/banner.png" height="75%" width="75%">
+				</h1>
+				<p>
+					<div class="buttons" style="display: block">
+						<a class="button is-dark is-medium is-rounded">
+							<span class="icon"><i class="fas fa-gamepad"></i></span>
+							<span>Play</span>
+						</a>
+						<a class="button is-light is-medium is-rounded">
+							<span class="icon"><i class="fab fa-teamspeak"></i></span>
+							<span>TeamSpeak</span>
+						</a>
+						<a class="button is-medium is-rounded discord">
+							<span class="icon"><i class="fab fa-discord"></i></span>
+							<span>Discord</span>
+						</a>
+					</div>
+				</p>
+			</div>
+		</div>
+	</section>
+{% endblock %}

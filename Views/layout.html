@@ -1,0 +1,74 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{% block title %}{% endblock %}</title>
+
+		<link rel="stylesheet" href="/css/bulma.min.css" />
+		<link rel="stylesheet" href="/css/prrp.css" />
+		<script src="https://kit.fontawesome.com/f3f846f7f5.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<nav class="navbar is-dark" role="navigation" aria-label="main navigation" style="background-color: transparent">
+			<div class="navbar-brand">
+				<a class="navbar-item" href="/">
+					<span class="prrp">Project Reality Roleplay</span>
+				</a>
+			
+				<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
+			</div>
+		  
+			<div id="navbar" class="navbar-menu">		  
+				<div class="navbar-end">
+					<a class="navbar-item" href="/">
+						<span class="icon"><i class="fas fa-home"></i></span>
+						<span>Home</span>
+					</a>
+					<a class="navbar-item" href="https://forum.pr-rp.org">
+						<span class="icon"><i class="fab fa-forumbee"></i></span>
+						<span>Forum</span>
+					</a>
+					<a class="navbar-item" href="/news">
+						<span class="icon"><i class="fas fa-rss-square"></i></span>
+						<span>News</span>
+					</a>
+					<a class="navbar-item" href="/donations">
+						<span class="icon"><i class="fas fa-hand-holding-usd"></i></span>
+						<span>Donations</span>
+					</a>
+					<a class="navbar-item" href="/roster">
+						<span class="icon"><i class="fas fa-clipboard-list"></i></span>
+						<span>Staff Roster</span>
+					</a>
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a class="navbar-link">
+							<span class="icon"><i class="fas fa-university"></i></span>
+							<span>Factions</span>
+						</a>
+				
+						<div class="navbar-dropdown">
+							<a class="navbar-item" href="https://lsgov.online">
+								<span class="icon"><i class="fas fa-gavel"></i></span>
+								<span>GOV</span>
+							</a>
+							<a class="navbar-item" href="https://pd.lsgov.online">
+								<span class="icon"><i class="fas fa-handshake"></i></span>
+								<span>LSPD</span>
+							</a>
+							<a class="navbar-item" href="https://fd.lsgov.online">
+								<span class="icon"><i class="fas fa-hand-holding-medical"></i></span>
+								<span>LSFD</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		{% block content %}{% endblock %}
+	</body>
+</html>

@@ -1,0 +1,6 @@
+- choose a directory to clone v to (could be your home or /opt in my case): cd /opt
+- git clone v (sudo if not in your home): sudo git clone https://github.com/vlang/v
+- cd into v: cd v
+- make v: make
+- symlink v to /usr/local/bin: sudo ./v symlink
+- now the cool part, every now and then update v: v up

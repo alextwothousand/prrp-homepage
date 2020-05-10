@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block title %}Project Reality Roleplay - Staff Roster{% endblock %}
+
+{% block content %}
+<script>console.log(`{{ staff }}`);</script>
+<section class="section is-first-only">
+	<div class="container has-text-centered">
+		<h1 class="title prrp" style="font-size: 72px !important;">Staff Roster</h1>
+	</div>
+</section>
+
+<section class="section">
+	<div class="container has-text-centered">
+		<h1 class="title" style="color: #c41515;">Management</h1>
+		<p style="color: #dcddde;">
+			<h2 class="subtitle" style="color: #dcddde; margin-bottom: 0;">Alexander<h2>
+			<h2 class="subtitle" style="color: #dcddde; margin-bottom: 0;">Hossenberg<h2>
+		</p>
+	</div>
+</section>
+
+<section class="section">
+	<div class="container has-text-centered">
+		<h1 class="title" style="color: #c41515;">Senior Administrator</h1>
+		<p style="color: #dcddde;">
+			<h2 class="subtitle" style="color: #dcddde; margin-bottom: 0;">Alexander<h2>
+			<h2 class="subtitle" style="color: #dcddde; margin-bottom: 0;">Hossenberg<h2>
+		</p>
+	</div>
+</section>
+{% endblock %}

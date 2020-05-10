@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block title %}Project Reality Roleplay - News{% endblock %}
+
+{% block content %}
+<section class="section is-first-only">
+	<div class="container has-text-centered">
+		<h1 class="title prrp" style="font-size: 72px !important;">News</h1>
+	</div>
+</section>
+
+	{% for article in articles %}
+	<section class="section is-first-only">
+		<div class="container has-text-centered">
+			<div class="columns">
+				<div class="column"></div>
+				<div class="column is-8">
+					<div class="card" style="background-color: rgba(54, 54, 54, 0.8); color: rgba(220, 221, 222, 1.0);">
+						<div class="card-header">
+							<p class="card-header-title" style="color: rgba(220, 221, 222, 1.0)">
+								{{ article.headline }}
+							</p>
+						</div>
+
+						<div class="card-content news">
+							{{ article.text }}
+							<div style="font-weight: 700;">Written by {{ article.author }} &bull; {{ article.date }}.</div>
+						</div>
+					</div>
+				</div>
+				<div class="column"></div>
+			</div>
+		</div>
+	</section>
+	{% endfor %}
+{% endblock %}

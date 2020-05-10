@@ -1,0 +1,41 @@
+@font-face {
+	font-family: Pricedown;
+	src: url("/fonts/Pricedown.ttf");
+}
+
+body, html {
+	background: transparent url(/img/wallpaper.png) no-repeat fixed center !important;
+}
+
+.prrp {
+	font-family: Pricedown, Roboto, sans-serif;
+	font-size: 24px !important;
+	color: #dcddde;
+}
+
+a.button.discord {
+	background-color: rgb(114, 137, 218) !important;
+}
+
+a.button.discord:hover {
+	background-color: rgb(107, 130, 211) !important;
+}
+
+.navbar {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.card-content.news {
+	text-align: left; 
+	/*white-space: pre-wrap; 
+	word-wrap: break-word;*/
+}
+
+section.section.is-first-only:first-of-type {
+	padding: 3.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+section.section.is-first-only {
+	padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+}
